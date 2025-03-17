@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'SF Pro';
+    src: url('fonts/SF-Pro-Display-MediumItalic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('fonts/SF-Pro-Display-LightItalic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('fonts/SF-Pro-Text-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    background: url('img/fundo-mosh.gif') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    font-family: 'SF Pro', sans-serif;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.content{
+    position: relative;
+    gap: 20px;
+    z-index: 2;
+    flex-grow: 1; /* Mantém a logo no centro verticalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-content {
+    display: flex;
+    align-items: center; /* Alinhamento perfeito */
+    justify-content: center;
+    gap: 10px; /* Ajuste fino no espaçamento */
+    font-size: 3rem;
+    font-weight: bold;
+    width: fit-content;
+    margin: 0 auto;
+    line-height: 1; /* Corrige desalinhamento da fonte */
+}
+
+.logo{
+    font-size: 6rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'SF Pro', sans-serif;
+    font-weight: 300; /* Medium */
+    font-style: italic;
+}
+
+.logo img {
+    padding-right: 25px;
+    border-right: solid 0.2rem;
+    width: 180px;
+    max-width: 80%;
+    margin-right: 25px;
+    height: auto;
+    margin: 0 10 0 0; /* Centraliza */
+    display: block;
+}
+
+.button-content {
+    position: absolute;
+    
+    bottom: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-custom {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px) saturate(120%); /* Efeito de vidro fosco */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    width: 200px; /* Define um tamanho padrão */
+    max-width: 90%;
+    text-align: center;
+}
+
+.btn-custom:hover {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a{
+    margin: 0 10px;
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+}
+
+.social-icons a:hover{
+    color: #ddd;
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 150px; /* Centraliza */
+    }
+
+    .logo span{
+        font-size: 3.5rem;
+    }
+
+    .btn-custom {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+        width: 180px;
+    }
+
+    .button-container {
+        bottom: 120px; /* Aumenta distância do botão para os ícones */
+    }
+
+    .social-icons {
+        gap: 15px;
+    }
+}
+
+/* 🔹 Ajuste extra para telas muito pequenas */
+@media (max-width: 480px) {
+    .logo{
+        font-size: 3rem;
+
+    }
+
+    .logo img {
+        width: 100px;
+        border-right: solid 0.2rem;
+        margin-right: 20px;
+        padding-right: 15px;
+    }
+
+    .btn-custom {
+        font-size: 0.85rem;
+        padding: 8px 16px;
+        width: 160px;
+    }
+
+    .button-container {
+        bottom: 140px;
+    }
+
+    .social-icons a {
+        font-size: 1.2rem;
+    }
+}
