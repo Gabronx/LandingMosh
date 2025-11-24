@@ -157,6 +157,10 @@ body {
         letter-spacing: -5px!important;
     }
 
+    .logo img {
+    margin-right: 15px!important;
+    }
+
     .btn-custom {
         font-size: 0.9rem;
         padding: 10px 20px;
