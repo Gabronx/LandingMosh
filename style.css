@@ -27,7 +27,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
+    color: rgb(220, 220, 220);
     position: relative;
     overflow: hidden;
     font-family: 'SF Pro', sans-serif;
@@ -58,12 +58,23 @@ body {
     align-items: center; /* Alinhamento perfeito */
     justify-content: center;
     gap: 10px; /* Ajuste fino no espaçamento */
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     width: fit-content;
     margin: 0 auto;
     line-height: 1; /* Corrige desalinhamento da fonte */
 }
+
+.logo span {
+    font-size: 8.4rem;
+    font-weight: bold;
+    width: fit-content;
+    margin: 0 auto;
+    line-height: 1;
+    gap: 10px;
+    letter-spacing: -5px;
+}
+
 
 .logo{
     font-size: 6rem;
@@ -142,7 +153,8 @@ body {
     }
 
     .logo span{
-        font-size: 3.5rem;
+        font-size: 4.4rem;
+        letter-spacing: -2px!important;
     }
 
     .btn-custom {
